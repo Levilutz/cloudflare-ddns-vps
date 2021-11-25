@@ -109,7 +109,7 @@ def update_ddns(token: str, zone_name: str, dns_name: str):
             "name": dns_name,
             "type": "A",
             "content": public_ip,
-            "TTL": 60,
+            "TTL": 300,
         }
         dns_record = api.zones.dns_records.post(zone_id, data=dns_record_data)
         logging.info(f"Created new record: {dns_record['id']}")
