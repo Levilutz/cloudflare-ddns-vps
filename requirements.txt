@@ -1,0 +1,2 @@
+cloudflare^=2.8.15
+requests^=2.26.0
